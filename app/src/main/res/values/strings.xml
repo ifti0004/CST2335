@@ -10,4 +10,10 @@
     <string name="EnableSomething">Enable Something</string>
     <string name="userLogin">Name</string>
 
+    //Strings for ListItemActivity --> CheckBox
+    <string name="dialog_message">Do you Want to finish the activity?</string>
+    <string name="dialog_title">Finish activity?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
 </resources>

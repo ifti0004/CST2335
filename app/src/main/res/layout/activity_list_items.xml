@@ -24,13 +24,14 @@
         android:text="@string/CheckBox1"
         android:layout_columnWeight="1"
         android:gravity="fill"
+        android:id="@+id/checkBoxID"
         />
 
     <Switch
         android:layout_columnWeight="1"
         android:text="@string/EnableSomething"
         android:gravity="fill"
-
+        android:id="@+id/enableSomethingID"
         />
 
     <ImageButton
