@@ -18,6 +18,19 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
         Log.i(StartActivity, "In onCreate()");
+
+
+        Button startChat = (Button) findViewById(R.id.startChatID);
+        startChat.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Log.i(StartActivity,"User clicked Start Chat");
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         //Store a reference to the button
         Button imButton = (Button) findViewById(R.id.imButtonID);
         imButton.setOnClickListener(new View.OnClickListener() {
@@ -45,6 +58,8 @@ public class StartActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(getApplicationContext() , text, duration);
             toast.show();
         }
+
+
     }
 
 

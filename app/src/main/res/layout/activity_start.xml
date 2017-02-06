@@ -25,4 +25,13 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="17dp"
         android:id="@+id/imButtonID" />
+
+    <Button
+        android:text="Start Chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startChatID"
+        android:layout_below="@+id/imButtonID"
+        android:layout_toEndOf="@+id/imButtonID"
+        android:layout_marginTop="74dp" />
 </RelativeLayout>
