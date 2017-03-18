@@ -10,4 +10,47 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.nadeem.androidlabs.WeatherForecast">
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/weatherImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherCurrentTemp"
+        android:layout_below="@+id/weatherImage"
+        android:text="Current temperature: "
+        android:gravity="center_horizontal" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherMinTemp"
+        android:layout_below="@+id/weatherCurrentTemp"
+        android:layout_alignParentLeft="true"
+        android:text="Min temerature: " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherMaxTemp"
+        android:text="Max temerature: "
+        android:layout_below="@+id/weatherCurrentTemp"
+        android:layout_alignParentRight="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/weatherProgress"
+        android:layout_below="@+id/weatherMaxTemp"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
