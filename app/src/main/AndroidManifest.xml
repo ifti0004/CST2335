@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nadeem.androidlabs">
-
+    <supports-screens android:requiresSmallestWidthDp="600" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -32,9 +32,10 @@
         <activity
             android:name=".ChatWindow"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".test" />
+        <activity android:name=".test_midterm" />
         <activity android:name=".test2" />
-        <activity android:name=".WeatherForecast"></activity>
+        <activity android:name=".WeatherForecast" />
+        <activity android:name=".MessageDetails"></activity>
     </application>
 
 </manifest>

@@ -42,4 +42,11 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
     }
 
 
+
+    public void onDeleteMessage(String _id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL("DELETE FROM " + databaseName + " WHERE " + ID_COLUMN + "=\"" + _id + "\";");
+    }
 }
+
+
