@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_message"
+        android:title="@string/menu_message"
+        android:icon="@drawable/message"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_graphic"
+        android:title="@string/menu_graphic"
+        android:icon="@drawable/bird"
+        android:orderInCategory="102"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/menu_calendar"
+        android:title="@string/menu_calendar"
+        android:icon="@drawable/calendar"
+        android:orderInCategory="103"
+        app:showAsAction="always" />
+
+
+    <item android:id="@+id/menu_about"
+        android:title="@string/menu_about"
+        android:orderInCategory="103"
+        app:showAsAction="never" />
+</menu>

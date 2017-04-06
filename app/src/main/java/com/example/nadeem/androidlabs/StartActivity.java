@@ -9,6 +9,8 @@ package com.example.nadeem.androidlabs;
         import android.widget.Button;
         import android.widget.Toast;
 
+        import static com.example.nadeem.androidlabs.WeatherForecast.ACTIVITY_NAME;
+
 public class StartActivity extends AppCompatActivity {
 
     protected static final String StartActivity = "StartActivity";
@@ -49,11 +51,21 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(StartActivity, "User clicked Check Weather");
                 Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                Log.i(StartActivity,"In onCreate()");
                 startActivity(intent);
             }
         });
 
-        Log.i(StartActivity,"In onCreate()");
+
+       Button toolbarButton = (Button) findViewById(R.id.test_toolbar_button);
+        toolbarButton.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toolbarIntent = new Intent(getApplicationContext(), TestToolbar.class);
+                Log.i(ACTIVITY_NAME, "User clicked Test Toolbar");
+                startActivity(toolbarIntent);
+            }
+        });
     }
 
 
